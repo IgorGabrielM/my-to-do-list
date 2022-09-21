@@ -1,0 +1,57 @@
+.cardImageLogin{
+    background-color: #121d29;
+}
+.imageLogin{
+    width: 1000px;
+}
+
+.cardLogin{
+    width: 50%;
+    padding: 15px;
+    background-image: linear-gradient(to right, #121d29, #a741bd);
+}
+
+.inputLogin{
+    height: 60px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: workup-card;
+}
+
+.buttonSend{
+    background-color: #6541f5;
+    width: 500px;
+    height: 60px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttonSend:active{
+    animation-duration: 1s;
+    animation-name: scale-up-center;
+}
+
+@keyframes workup-card {
+    0%{
+        margin-top: 100%;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
