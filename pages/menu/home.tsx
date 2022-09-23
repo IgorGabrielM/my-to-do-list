@@ -22,6 +22,7 @@ export default function Home() {
 
     return(
         <div className={styles.content}>
+
             <div className={styles.tasks}>
                 {
                     tasks !== null ? tasks.map(task => {
@@ -30,7 +31,7 @@ export default function Home() {
                                 <p>{task.title}</p>
                             </div>
                         )
-                    }): "Nenhuma tarefa pendente"
+                    }): <h1>Nenhuma tarefa pendente</h1>
                 }
             </div>
         </div>
