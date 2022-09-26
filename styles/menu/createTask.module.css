@@ -1,0 +1,68 @@
+.cardTaskForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    background-image: linear-gradient(to right, #121d29, #a741bd);
+}
+.cardInputs{
+
+}
+
+.inputsForm{
+    width: 110%;
+    height: 110%;
+    background-color: #e7e7e7;
+    animation-duration: 1s;
+    animation-name: workup-card;
+}
+
+.imageTask{
+    width: 1000px;
+    object-fit: contain;
+}
+
+.inputsTasks{
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.buttonSendTask{
+    background-color: #6541f5;
+    width: 500px;
+    height: 60px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttonSendTask:active{
+    animation-duration: 1s;
+    animation-name: scale-up-center;
+}
+
+@keyframes workup-card {
+    0%{
+        margin-top: 100%;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

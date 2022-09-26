@@ -1,7 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/menu/home": "pages/menu/home.js",
+  "/_error": "pages/_error.js",
   "/menu/createTask": "pages/menu/createTask.js"
 }
