@@ -52,6 +52,16 @@ export default function createTask(){
                     name='deadline'
                     required
                 />
+                {
+                    categories !== null ? categories.map(category => {
+                        return(
+                            <div>
+                                <p>{category.name}</p>
+                            </div>
+                        )
+                    }): <h1>Nenhuma categoria criada</h1>
+                }
+                <button type="submit">Criar tarefa</button>
             </form>
         </div>
     )

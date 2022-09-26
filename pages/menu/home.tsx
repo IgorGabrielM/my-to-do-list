@@ -5,6 +5,7 @@ import {getApiClient} from "../api/axios";
 import styles from '../../styles/menu/home.module.css'
 import {useEffect, useState} from "react";
 import {TaskModel} from "../data/models/task.model";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -22,7 +23,6 @@ export default function Home() {
 
     return(
         <div className={styles.content}>
-
             <div className={styles.tasks}>
                 {
                     tasks !== null ? tasks.map(task => {
@@ -33,6 +33,11 @@ export default function Home() {
                         )
                     }): <h1>Nenhuma tarefa pendente</h1>
                 }
+            </div>
+            <div>
+                <Link href='createTask'>
+                    <a>Criar tarefa</a>
+                </Link>
             </div>
         </div>
 

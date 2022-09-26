@@ -12,7 +12,7 @@ export default function createCategory(){
 
     return(
         <div>
-            <form>
+            <form onSubmit={handleSubmit(handleCreateCategory)}>
                 <label htmlFor="name">Nome da categoria:</label>
                 <input
                     { ...register('name') }
@@ -29,6 +29,7 @@ export default function createCategory(){
                     name='colour'
                     required
                 />
+                <button type="submit">Criar categoria</button>
             </form>
         </div>
     )
