@@ -1,6 +1,7 @@
 import {useForm} from "react-hook-form";
 import {api} from "../api/api";
 import {CategoryModel} from "../data/models/category.model";
+import { toast, ToastContainer } from 'react-nextjs-toast'
 import styles from "../../styles/auth/login.module.css";
 
 export default function createCategory(){
@@ -8,6 +9,7 @@ export default function createCategory(){
 
     async function handleCreateCategory(data: CategoryModel){
         await api.post('/category', data)
+        toast.notify('Categoria criada com sucesso')
     }
 
     return(
@@ -16,7 +18,6 @@ export default function createCategory(){
                 <label htmlFor="name">Nome da categoria:</label>
                 <input
                     { ...register('name') }
-                    className={styles.inputLogin}
                     type="text"
                     name='name'
                     required
@@ -24,13 +25,18 @@ export default function createCategory(){
                 <label htmlFor="colour">Cor:</label>
                 <input
                     { ...register('colour') }
-                    className={styles.inputLogin}
                     type="color"
                     name='colour'
                     required
                 />
                 <button type="submit">Criar categoria</button>
             </form>
+            <ToastContainer
+                align={'right'}
+                position={'bottom'}
+                type={'success'}
+                title={'Criada'}>
+            </ToastContainer>
         </div>
     )
 }

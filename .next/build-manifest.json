@@ -25,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/menu/createCategory": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/menu/createCategory.js"
-    ],
     "/menu/createTask": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/menu/createTask.js"
+    ],
+    "/menu/home": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/menu/home.js"
     ]
   },
   "ampFirstPages": []

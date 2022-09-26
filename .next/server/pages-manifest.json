@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/menu/createCategory": "pages/menu/createCategory.js",
+  "/menu/home": "pages/menu/home.js",
   "/menu/createTask": "pages/menu/createTask.js"
 }
